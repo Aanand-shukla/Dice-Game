@@ -1,0 +1,347 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.main h3 {
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 32px;
+
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(243, 129, 148), rgb(241, 97, 241));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player1 {
+    height: 550px;
+    width: 440px;
+    background-color: #f7b8d5;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player2 {
+    height: 550px;
+    width: 440px;
+    background: #fa89ef;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hold {
+    width: 120px;
+    height: 45px;
+    display: flex;
+    background: #fff;
+    opacity: 0.7;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 90px;
+    right: -60px;
+    cursor: pointer;
+}
+
+.hold:hover {
+    padding: 0.3rem;
+}
+
+.hold img {
+    width: 40%;
+    height: 40%;
+    margin-left: 0.5rem;
+}
+
+.hold p {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.player1 h3 {
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 4rem;
+    text-transform: uppercase;
+}
+
+.Player1Score {
+    margin-top: 2rem;
+    font-size: 53px;
+    font-weight: bold;
+    color: #a70425;
+}
+
+.player1CurrentScore {
+    width: 200px;
+    height: 120px;
+    background: #a70425;
+    margin-top: 9.2rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.player2 h3 {
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 4rem;
+    text-transform: uppercase;
+}
+
+.Player2Score {
+    margin-top: 2rem;
+    font-size: 53px;
+    font-weight: bold;
+    color: #a70425;
+}
+
+.player2CurrentScore {
+    width: 200px;
+    height: 120px;
+    background: #a70425;
+    margin-top: 9.2rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dice {
+    width: 160px;
+    height: 45px;
+    display: flex;
+    background: #fff;
+    opacity: 0.7;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 160px;
+    right: -78px;
+    cursor: pointer;
+}
+
+.dice:hover {
+    padding: 0.3rem;
+}
+
+.dice img {
+    width: 50%;
+    height: 50%;
+    margin-left: 0.5rem;
+}
+
+.dice p {
+    font-weight: bold;
+    margin-right: 1rem;
+    text-transform: uppercase;
+}
+
+.reset {
+    width: 150px;
+    height: 45px;
+    display: flex;
+    background: #fff;
+    opacity: 0.7;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    position: absolute;
+    top: 50px;
+    right: -75px;
+    cursor: pointer;
+}
+
+.reset:hover {
+    padding: 0.3rem;
+}
+
+.reset img {
+    width: 50%;
+    height: 50%;
+    margin-left: 0.5rem;
+}
+
+.reset p {
+    font-weight: bold;
+    margin-right: 1rem;
+    text-transform: uppercase;
+}
+
+.player2CurrentScore p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.dices img {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 40px;
+    height: 40px;
+}
+
+.dices img:nth-child(4) {
+    background: transparent;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.player1CurrentScore p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.player1CurrentScore p:nth-child(2) {
+    font-size: 30px;
+}
+
+.player2CurrentScore p:nth-child(2) {
+    font-size: 30px;
+}
+
+.winner {
+    background: #28e99f;
+}
+
+
+@media screen and (max-width:750px) {
+
+    .main {
+        height: 100vh;
+    }
+
+    .player_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .reset {
+        width: 113px;
+        height: 45px;
+        top: 12px;
+        right: 125px;
+
+    }
+
+    .dice {
+
+        width: 126px;
+        height: 45px;
+        position: absolute;
+        bottom: -19px;
+        right: 205px;
+
+    }
+
+    .player1 h3 {
+
+        font-size: 20px;
+
+    }
+
+    .player2 h3 {
+
+        font-size: 20px;
+
+    }
+
+    .player1CurrentScore {
+        width: 132px;
+        height: 78px;
+        margin-top: -3.8rem;
+
+    }
+
+    .player2CurrentScore {
+        width: 132px;
+        height: 78px;
+        margin-top: -3.8rem;
+
+    }
+
+    .player1 {
+        height: 294px;
+        width: 352px;
+
+    }
+
+    .player2 {
+        height: 294px;
+        width: 352px;
+
+    }
+
+    .hold {
+        width: 113px;
+        height: 45px;
+        bottom: -13px;
+        right: 16px;
+
+    }
+}
+
+@media screen and (max-width:370px) {
+    .player1 {
+        width: 298px;
+    }
+
+    .player2 {
+        width: 298px;
+    }
+
+    .hold {
+        width: 94px;
+    }
+
+    .dice {
+        width: 106px;
+        bottom: -19px;
+        right: 172px;
+    }
+
+    .reset {
+        width: 107px;
+        height: 45px;
+        top: 12px;
+        right: 93px;
+    }
+}
