@@ -317,6 +317,15 @@
         right: 16px;
 
     }
+
+    .dices img {
+        position: absolute;
+        top: 46%;
+        left: 51%;
+        transform: translate(-50%, 50%);
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media screen and (max-width:370px) {
@@ -343,5 +352,14 @@
         height: 45px;
         top: 12px;
         right: 93px;
+    }
+
+    .dices img {
+        position: absolute;
+        top: 46%;
+        left: 51%;
+        transform: translate(-50%, 50%);
+        width: 40px;
+        height: 40px;
     }
 }
