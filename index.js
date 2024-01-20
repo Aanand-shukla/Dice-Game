@@ -1,3 +1,4 @@
+// debugger;
 let dice = document.querySelector(".dice");
 let chances = document.querySelector(".dices");
 let Player1Score = document.querySelector(".Player1Score");

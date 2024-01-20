@@ -19,6 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
 }
 
 .player_container {
@@ -287,14 +288,15 @@
     .player1CurrentScore {
         width: 132px;
         height: 78px;
-        margin-top: -3.8rem;
-
+        margin-top: 0.2rem;
     }
+
+
 
     .player2CurrentScore {
         width: 132px;
         height: 78px;
-        margin-top: -3.8rem;
+        margin-top: 0.2rem;
 
     }
 
@@ -316,6 +318,13 @@
         bottom: -13px;
         right: 16px;
 
+    }
+
+    .Player1Score {
+        margin-top: 0rem;
+        font-size: 53px;
+        font-weight: bold;
+        color: #a70425;
     }
 
     .dices img {
